@@ -7,8 +7,8 @@ This work is on developing an algorithm embedded on simple parametric and non-pa
 3. This vastly reduces the inherent bias error of the parametric model and translates into the variance error. 
 4. The architecture of the algorithm is structured in a way to have a balance between the bias and variance error and also minimise it as much possible. 
 5. The irreducible error in a model comes due to the improper definition of the problem statement and the failure to look a unknown features that have an impact on the observation. But, these features may not impact all the observations at once. This is the reason behind the abnormalities and anomalies. 
-6. Upon mathematical analysis, it was found that the error function was a max(variance error, irreducible) for the algorithm.
-7. From the results of embedding the algorithm on various parametric and non-parametric models, it was found that the algorithm outperforms almost every other ML algorithms by producing an average test accuracy: 0.96 and average training accuracy: 0.98 without overfitting the data with very minimal variance in the output predictions.
+6. Upon mathematical analysis, it was found that the error function was a max(variance error, irreducible error) for the algorithm.
+7. From the results of embedding the algorithm on various parametric and non-parametric models, it was found that the algorithm outperforms almost every other ML algorithms by producing an average test accuracy: 0.96 and average training accuracy: 0.98 without overfitting the data, with very minimal variance in the output predictions.
 8. The algorithm also proved to be worthy in case the data was sourced from different sources with no clue on how the data was collected or generated. The classification into subsets and training of each subset on different micro classifiers, automatically classified the different sources into different subsets regardless of the class labels. This is mainly achieved by making any model non-parametric.
 
 # Terms to be aware of:
@@ -28,5 +28,7 @@ For example, if the dataset has a distribution of class label 1:500; class label
 5. The results of all the individual micro classifiers are aggreagated to give the final prediction of the dataset. 
 
 
+With due respect to the complaince agreement, no part of the code or the dataset that I used, can be hosted in any public repository. 
+Sorry for the inconvenience, but the overview of the algorithm is just enough to program it in any language. 
 
 The inspiration for this algorithm was derived from the work done by Sašo Karakatic et al. on 'Improved classification with allocation method and multiple classifiers'.
